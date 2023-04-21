@@ -10,3 +10,9 @@ def google_search(keyword):
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
         search_results = soup.find_all('div', class_='tF2Cxc')
+            for result in search_results:
+                title = result.find('h3', class_='LC20lb DKV0Md').text
+                link = result.find('a')['href']
+                print(f'Title: {title}\nURL: {link}\n')
+    else:
+        print(f'Request failed with status code {response.status_code}')
