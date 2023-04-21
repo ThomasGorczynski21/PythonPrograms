@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def google_search(keyword):
-    url = f'https://www.google.com/search?q={keyword}'
+    url = f'https://www.duckduckgo.com/search?q={keyword}'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
     }
