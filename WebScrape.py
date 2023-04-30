@@ -3,7 +3,7 @@ print(sys.path)
 sys.path.append('/Users/tom_8/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages')
 
 
-## this script is meant to search google, but unsure if they allow it.
+## this script is meant to search duckduckgo, but unsure if they allow it.
 
 import requests
 from bs4 import BeautifulSoup
